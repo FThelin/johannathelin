@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Main.module.css";
 import { motion } from "framer-motion";
 import Button from "../components/Button";
+import Link from "next/link";
 
 function Main() {
   return (
@@ -23,7 +24,9 @@ function Main() {
         >
           Sångpedagog och röstcoach baserad i Vadstena
         </motion.p>
-        <Button text="kontakta mig" />
+        <a href={"#contact"} passHref>
+          <Button text="kontakta mig" />
+        </a>
       </div>
     </div>
   );

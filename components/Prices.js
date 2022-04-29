@@ -27,7 +27,9 @@ const Prices = () => {
             </div>
             <p className={styles.cityName}>VADSTENA</p>
             <div className={styles.priceButton}>
-              <Button text="Välj" />
+              <a href={"#contact"} passHref>
+                <Button text="Välj" />
+              </a>
             </div>
           </div>
         </div>
@@ -49,12 +51,14 @@ const Prices = () => {
           </div>
           <div className={styles.sectionContent}>
             <div className={styles.priceInfo}>
-              <h6>600</h6>
+              <h6>1650</h6>
               <p>kronor</p>
             </div>
             <p className={styles.cityName}>VADSTENA</p>
             <div className={styles.priceButton}>
-              <Button text="Välj" />
+              <a href={"#contact"} passHref>
+                <Button text="Välj" />
+              </a>
             </div>
           </div>
         </div>
@@ -76,12 +80,14 @@ const Prices = () => {
           </div>
           <div className={styles.sectionContent}>
             <div className={styles.priceInfo}>
-              <h6>600</h6>
+              <h6>2500</h6>
               <p>kronor</p>
             </div>
             <p className={styles.cityName}>VADSTENA</p>
             <div className={styles.priceButton}>
-              <Button text="Välj" />
+              <a href={"#contact"} passHref>
+                <Button text="Välj" />
+              </a>
             </div>
           </div>
         </div>

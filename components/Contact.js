@@ -46,7 +46,7 @@ const Contact = () => {
       </motion.h1>
       <form className={styles.main}>
         <formGroup className={styles.inputGroup}>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">Namn</label>
           <input
             type="text"
             name="name"
@@ -68,7 +68,7 @@ const Contact = () => {
           />
         </formGroup>
         <formGroup className={styles.inputGroup}>
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">Meddelande</label>
           <textarea
             type="text"
             rows="4"
