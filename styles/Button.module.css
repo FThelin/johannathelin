@@ -1,0 +1,31 @@
+.btn {
+    height: 4rem;
+    background: transparent;
+    border: 3px solid white;
+    padding: 1rem 3rem;
+    color: white;
+    font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-size: 15px;
+    text-shadow: 2px 2px 8px rgb(56, 56, 56);
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+@media screen and (max-width: 860px) {
+    .btn {
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 1.5rem;
+    }
+
+}

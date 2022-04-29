@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 5rem;
+    color: white;
+}
+
+.heading {
+  font-size: 64px;
+  font-family: 'Anton', sans-serif;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.main {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputGroup {
+    height: 50%;
+    width: 300%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .inputLabel {
+    text-align: left;
+  }
+  .inputField {
+    height: 2.5rem;
+  }
+  .inputFieldTextArea {
+    height: 6rem;
+  }
+
+  .btn {
+    height: 4rem;
+    background: transparent;
+    border: 3px solid white;
+    padding: 1rem 3rem;
+    color: white;
+    font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-size: 15px;
+    text-shadow: 2px 2px 8px rgb(56, 56, 56);
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+@media screen and (max-width: 840px){
+  .inputGroup {
+    height: 50%;
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+}

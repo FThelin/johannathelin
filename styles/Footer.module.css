@@ -1,0 +1,13 @@
+.container {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container p {
+    color: gray;
+    text-transform: uppercase;
+    font-family: 'Cousine', monospace;
+}
