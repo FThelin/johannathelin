@@ -27,7 +27,7 @@ const Prices = () => {
             </div>
             <p className={styles.cityName}>VADSTENA</p>
             <div className={styles.priceButton}>
-              <a href={"#contact"} passHref>
+              <a href={"#contact"}>
                 <Button text="Välj" />
               </a>
             </div>
@@ -56,7 +56,7 @@ const Prices = () => {
             </div>
             <p className={styles.cityName}>VADSTENA</p>
             <div className={styles.priceButton}>
-              <a href={"#contact"} passHref>
+              <a href={"#contact"}>
                 <Button text="Välj" />
               </a>
             </div>
@@ -85,7 +85,7 @@ const Prices = () => {
             </div>
             <p className={styles.cityName}>VADSTENA</p>
             <div className={styles.priceButton}>
-              <a href={"#contact"} passHref>
+              <a href={"#contact"}>
                 <Button text="Välj" />
               </a>
             </div>

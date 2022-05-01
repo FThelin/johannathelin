@@ -1,33 +1,61 @@
 /* eslint-disable import/no-anonymous-default-export */
 require("dotenv").config();
 
-export default function (req, res) {
-  let nodemailer = require("nodemailer");
-  const PASSWORD = process.env.password;
+const nodemailer = require("nodemailer");
+
+export default async (req, res) => {
+  const { name, email, message } = req.body;
+  const user = process.env.user;
+  const password = process.env.password;
+  console.log(user, password);
 
   const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user: "johannavocalcoach@gmail.com",
-      pass: PASSWORD,
+      user: user,
+      pass: password,
     },
     secure: true,
   });
 
-  const mailData = {
-    from: req.body.email,
-    to: "johannavocalcoach@gmail.com",
-    subject: `Message From ${req.body.name}`,
-    text: req.body.message,
-    html: `<div>${req.body.message}<br>${req.body.email}</div>`,
-  };
-
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
+  await new Promise((resolve, reject) => {
+    // verify connection configuration
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log("Server is ready to take our messages");
+        resolve(success);
+      }
+    });
   });
 
-  res.status(200).send("Successfully sent email");
-  console.log(req.body);
-}
+  const mailData = {
+    from: {
+      name: name,
+      address: email,
+    },
+    replyTo: email,
+    to: user,
+    subject: `form message`,
+    text: message,
+    html: `<div><p style="white-space: pre-line">${message}</p></div>`,
+  };
+
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(mailData, (err, info) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+      } else {
+        console.log(info);
+        resolve(info);
+      }
+    });
+  });
+
+  res.status(200).json({ status: "OK" });
+};

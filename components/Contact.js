@@ -7,10 +7,12 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Sending");
+    setIsLoading(true);
     let data = {
       name,
       email,
@@ -30,6 +32,12 @@ const Contact = () => {
         setName("");
         setEmail("");
         setMessage("");
+        setIsLoading(false);
+        setIsSuccess(true);
+      } else {
+        setIsLoading(false);
+        setSubmitted(true);
+        setIsSuccess(false);
       }
     });
   };
@@ -45,48 +53,68 @@ const Contact = () => {
         KONTAKT
       </motion.h1>
       <form className={styles.main}>
-        <formGroup className={styles.inputGroup}>
+        <div className={styles.inputGroup}>
           <label htmlFor="name">Namn</label>
           <input
             type="text"
             name="name"
+            value={name}
             className={styles.inputField}
             onChange={(e) => {
               setName(e.target.value);
             }}
           />
-        </formGroup>
-        <formGroup className={styles.inputGroup}>
+        </div>
+        <div className={styles.inputGroup}>
           <label htmlFor="email">Email</label>
           <input
             type="email"
             name="email"
+            value={email}
             className={styles.inputField}
             onChange={(e) => {
               setEmail(e.target.value);
             }}
           />
-        </formGroup>
-        <formGroup className={styles.inputGroup}>
+        </div>
+        <div className={styles.inputGroup}>
           <label htmlFor="message">Meddelande</label>
           <textarea
             type="text"
             rows="4"
             cols="20"
+            value={message}
             name="message"
             className={styles.inputFieldTextArea}
             onChange={(e) => {
               setMessage(e.target.value);
             }}
           />
-        </formGroup>
-        <input
+        </div>
+        {submitted && isSuccess && (
+          <p style={{ marginTop: "1rem", color: "white" }}>Mail skickat</p>
+        )}
+        {submitted && !isSuccess && (
+          <div
+            style={{ backgroundColor: "pink", width: 300, padding: "0.5rem" }}
+          >
+            <p style={{ color: "red", fontSize: 14 }}>
+              Något gick fel. Testa igen eller maila manuellt till
+              johannavocalcoach@gmail.com
+            </p>
+          </div>
+        )}
+        <button
+          style={{ opacity: isLoading ? 0.5 : 1 }}
+          disabled={isLoading}
           type="submit"
           className={styles.btn}
           onClick={(e) => {
             handleSubmit(e);
           }}
-        />
+        >
+          {isLoading ? "Skickar.." : "Skicka"}
+        </button>
       </form>
     </div>
   );

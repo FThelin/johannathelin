@@ -24,7 +24,7 @@ function Main() {
         >
           Sångpedagog och röstcoach baserad i Vadstena
         </motion.p>
-        <a href={"#contact"} passHref>
+        <a href={"#contact"}>
           <Button text="kontakta mig" />
         </a>
       </div>
