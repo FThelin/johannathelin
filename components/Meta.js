@@ -32,7 +32,7 @@ Meta.defaultProps = {
   description:
     "Johanna Thelin, sångpedagog som tar emot elever som vill lära sig sjunga eller förbättre sin sång",
   author: "Fredrik Thelin (Fthelin)",
-  image: "https://www.johannathelin.se/nymusik.jpg",
+  image: "https://www.johannathelin.se/nymusiksmall.jpg",
 };
 
 export default Meta;
