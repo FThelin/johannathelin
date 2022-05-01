@@ -15,8 +15,10 @@ const Prices = () => {
             <div className={styles.lessonInfo}>
               <h6>Prova på</h6>
               <p>
-                Kom och prova på hur det är att ha en sånglektion och gå
-                härifrån med tips om din fortsatta utveckling
+                Under en lektion hinner vi beröra ämnet sång och hur man kan
+                jobba med rösten och kroppen rent generellt när man sjunger. Du
+                får en övergripande inblick och en känsla av hur en sånglektion
+                och dess upplägg ser ut.
               </p>
             </div>
           </div>
@@ -44,8 +46,9 @@ const Prices = () => {
             <div className={styles.lessonInfo}>
               <h6>Prova på</h6>
               <p>
-                Kom och prova på hur det är att ha en sånglektion och gå
-                härifrån med tips om din fortsatta utveckling
+                Vi kommer arbeta med en låt och du kommer få med dig de första
+                grunderna kring hur man kan arbeta med sin röst och kropp när
+                man sjunger.
               </p>
             </div>
           </div>
@@ -73,8 +76,10 @@ const Prices = () => {
             <div className={styles.lessonInfo}>
               <h6>Prova på</h6>
               <p>
-                Kom och prova på hur det är att ha en sånglektion och gå
-                härifrån med tips om din fortsatta utveckling
+                Vi kommer arbeta med en låt, du kommer få med dig de första
+                grunderna kring hur du kan arbeta med rösten och kroppen när du
+                sjunger vi kommer också hinna lyfta möjligheter att utvecklas
+                för just dig!
               </p>
             </div>
           </div>
