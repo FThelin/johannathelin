@@ -39,7 +39,7 @@ export default async (req, res) => {
     },
     replyTo: email,
     to: user,
-    subject: `form message`,
+    subject: `Meddelande från hemsidan`,
     text: message,
     html: `<div><p style="white-space: pre-line">${message}</p></div>`,
   };

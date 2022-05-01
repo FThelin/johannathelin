@@ -15,10 +15,9 @@ const Prices = () => {
             <div className={styles.lessonInfo}>
               <h6>Prova på</h6>
               <p>
-                Under en lektion hinner vi beröra ämnet sång och hur man kan
-                jobba med rösten och kroppen rent generellt när man sjunger. Du
-                får en övergripande inblick och en känsla av hur en sånglektion
-                och dess upplägg ser ut.
+                Vi hinner beröra ämnet sång och hur man kan jobba med rösten och
+                kroppen rent generellt. Du får en övergripande inblick och en
+                känsla av hur en sånglektion och dess upplägg ser ut.
               </p>
             </div>
           </div>
@@ -76,10 +75,10 @@ const Prices = () => {
             <div className={styles.lessonInfo}>
               <h6>Prova på</h6>
               <p>
-                Vi kommer arbeta med en låt, du kommer få med dig de första
-                grunderna kring hur du kan arbeta med rösten och kroppen när du
-                sjunger vi kommer också hinna lyfta möjligheter att utvecklas
-                för just dig!
+                Vi kommer arbeta med en låt och du kommer få med dig de första
+                grunderna kring hur man kan arbeta med sin röst och kropp när
+                man sjunger. Vi kommer också hinna lyfta just dina möjligheter
+                att utvecklas.
               </p>
             </div>
           </div>
