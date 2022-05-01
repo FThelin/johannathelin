@@ -97,7 +97,7 @@
     .sectionContainer {
         height: 20rem;
         width: 22rem;
-        border-bottom: 3px solid white;
+        border: 1px solid gray;
         margin-bottom: 3rem;
     }
     .section {
@@ -109,7 +109,6 @@
 
     .sectionFirstContent {
         width: 100%;
-        border-bottom: 1px solid gray;
         border-left: none;
     }
 
