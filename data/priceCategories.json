@@ -1,0 +1,34 @@
+[{
+    "amount": "1",
+    "title": "Prova på",
+    "description": "Vi hinner beröra ämnet sång och hur man kan jobba med rösten och kroppen rent generellt. Du får en övergripande inblick och en känsla av hur en sånglektion och dess upplägg ser ut.",
+    "price": "600",
+    "duration": "45",
+    "adress": {
+        "street": "Södra Rännevallen 14",
+        "city": "Vadstena"
+    }
+},
+{
+    "amount": "3",
+    "title": "Prova på",
+    "description": "Vi kommer arbeta med en låt och du kommer få med dig de första grunderna kring hur man kan arbeta med sin röst och kropp när man sjunger.",
+    "price": "1650",
+    "duration": "45",
+    "adress": {
+        "street": "Södra Rännevallen 14",
+        "city": "Vadstena"
+    }
+},
+{
+    "amount": "5",
+    "title": "Prova på",
+    "description": "Vi kommer arbeta med en låt och du kommer få med dig de första grunderna kring hur man kan arbeta med sin röst och kropp när man sjunger. Vi kommer också hinna lyfta just dina möjligheter att utvecklas.",
+    "price": "2500",
+    "duration": "45",
+    "adress": {
+        "street": "Södra Rännevallen 14",
+        "city": "Vadstena"
+    }
+}
+]
