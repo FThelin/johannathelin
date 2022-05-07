@@ -95,15 +95,10 @@
     font-size: 14px;
 }
 
-.adressInfo h6 {
-    font-size: 18px;
-    font-family: 'Cousine', monospace;
-    text-transform:uppercase;
-}
-
-.adressInfo p {
-    font-family: 'Cousine', monospace;
-    font-size: 14px;
+.bottomText {
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 
@@ -118,7 +113,7 @@
     }
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 940px) {
     .categoryRow {
         border: 3px solid rgb(255, 255, 255);
         width: 90%;
@@ -126,36 +121,34 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 2rem;
+        padding: 1rem;
     }    
     
     .rowLeft {
         width: 100%;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 1rem;
         border: none;
     }
 
-    .amountInfo, .priceInfo {
+    .amountInfo {
         padding: 0;
         margin: 0;
-        margin-bottom: 2rem;
-        
-    }
-
-    .lessonInfo {
-        text-align: center;
     }
 
     .rowRight {
         width: 100%;
-        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
         border: none;
     }
 
-    .adressInfo {
-        margin-bottom: 2rem;
-        text-align: center;
+    .divider {
+        display: block;
+        width: 90%;
+        border-color: grey;
+        margin: 2rem 0 2rem 0
     }
 }

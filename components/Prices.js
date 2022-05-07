@@ -18,21 +18,24 @@ const Prices = () => {
               <p>{c.description}</p>
             </div>
           </div>
+          <hr className={styles.divider}></hr>
           <div className={styles.rowRight}>
             <div className={styles.priceInfo}>
               <h6>{c.price}</h6>
               <p>kronor</p>
             </div>
-            <div className={styles.adressInfo}>
-              <h6>{c.adress.city}</h6>
-              <p>{c.adress.street}</p>
-            </div>
-            <div className={styles.durationInto}>
-              <p>{`${c.duration} min`}</p>
+            <div className={styles.buttonContainer}>
+              <a href={"#contact"}>
+                <Button text="Välj" />
+              </a>
             </div>
           </div>
         </div>
       ))}
+      <p className={styles.bottomText}>
+        Varje lektion är 45 minuter och vi håller till på Södra Rännevallen 14 i
+        Vadstena
+      </p>
     </div>
   );
 };
