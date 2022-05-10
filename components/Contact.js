@@ -18,7 +18,7 @@ const Contact = () => {
       email,
       message,
     };
-    fetch("/api/contact", {
+    fetch("/api/contact2", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
