@@ -28,7 +28,7 @@ const Intro = () => {
         className={styles.p}
       >
         Under maj och juni månad öppnar jag upp för en ”prova på”-period i
-        Vadstena! Ni för chans att lära känna mig, en ny sångpedagog i stan, och
+        Vadstena! Ni får chans att lära känna mig, en ny sångpedagog i stan, och
         jag får chans att lära känna er alla sångsugna!
       </motion.p>
       <motion.p
